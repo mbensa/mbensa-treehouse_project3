@@ -1,0 +1,98 @@
+/* ===========================================
+common rules
+==============================================*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 62.5% Merriweather, sans-serif;
+  line-height: 1.5;
+}
+
+/*===========================================*/
+
+header {
+  text-align: center;
+}
+
+h1 {
+  background-color: #2d3945;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  padding: 20px 0;
+}
+
+.main-text {
+  position: relative;
+  margin: 0 20px;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid black;
+}
+
+.main-text::after {
+  content: " ";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  border: 2px solid black;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #2d3945;
+  padding: 20px 0 10px 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.contact {
+  display: flex;
+  margin: 0 20px;
+  text-align: left;
+  border-bottom: 2.5px solid black;
+  padding-bottom: 20px;
+}
+
+.contact legend {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #2d3945;
+  padding: 20px 0;
+}
+
+.contact label {
+  font-size: 1.2rem;
+}
+
+.contact select,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  background-color: #eff0f1;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  width: 100%;
+  padding: 12px 10px;
+  margin: 10px 0;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 10px;
+  color: #c8ccce;
+}
+
+.contact select {
+  color: #c8ccce;
+}
+
+.contact select option:not(:first-of-type) {
+  color: black;
+}
