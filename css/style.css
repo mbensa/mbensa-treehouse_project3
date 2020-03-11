@@ -28,7 +28,7 @@ h1 {
   position: relative;
   margin: 0 20px;
   padding: 0 0 20px 0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #2d3945;
 }
 
 .main-text::after {
@@ -37,7 +37,7 @@ h1 {
   bottom: 2px;
   left: 0;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid #2d3945;
 }
 
 h2 {
@@ -49,31 +49,35 @@ h2 {
 
 p {
   font-size: 1.2rem;
+  color: #495d70;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #495d70;
 }
 
 .contact {
   display: flex;
   margin: 0 20px;
   text-align: left;
-  border-bottom: 2.5px solid black;
+  border-bottom: 2.5px solid #2d3945;
   padding-bottom: 20px;
 }
 
-.contact legend {
+.contact legend,
+.newsletter legend {
   font-weight: bold;
   font-size: 1.6rem;
   color: #2d3945;
   padding: 20px 0;
 }
 
-.contact label {
-  font-size: 1.2rem;
-}
-
 .contact select,
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
   background-color: #eff0f1;
   font-size: 1.2rem;
   border-radius: 3px;
@@ -86,13 +90,55 @@ input::placeholder {
   text-align: right;
   font-style: italic;
   padding-right: 10px;
-  color: #c8ccce;
+  color: #adb2b7;
 }
 
 .contact select {
-  color: #c8ccce;
+  color: #adb2b7;
 }
 
-.contact select option:not(:first-of-type) {
-  color: black;
+input[id="zip"] {
+  width: 50%;
+}
+
+.newsletter {
+  margin: 0 20px;
+  text-align: left;
+}
+
+.select-newsletter,
+.select-format {
+  margin-bottom: 10px;
+}
+
+.newsletter-container {
+  margin-bottom: 20px;
+}
+
+.newsletter-container p {
+  margin-bottom: 10px;
+}
+
+.text label {
+  padding: 10px 0 5px;
+}
+
+button {
+  background-color: #4ebbb5;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  width: calc(100% - 40px);
+  margin: 0 20px 20px;
+  padding: 15px 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #9da3a8;
+  margin-bottom: 50px;
 }

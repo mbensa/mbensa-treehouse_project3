@@ -99,27 +99,35 @@
 
         <fieldset class="newsletter">
           <legend>Newsletter</legend>
-          <div>
+          <div class="newsletter-container">
             <p>Select the newsletter you would like to receive</p>
-            <input type="checkbox" id="html-news" name="type" value="news-1" checked />
-            <label for="html">HTML News</label>
-
-            <input type="checkbox" id="css-news" name="type" value="news-2" />
-            <label for="css">CSS News</label>
-
-            <input type="checkbox" id="js-news" name="type" value="news-3" />
-            <label for="js">Javascript News</label>
+            <div class="select-newsletter">
+              <input type="checkbox" id="html-news" name="type" value="news-1" checked />
+              <label for="html-news">HTML News</label>
+            </div>
+            <div class="select-newsletter">
+              <input type="checkbox" id="css-news" name="type" value="news-2" />
+              <label for="css-news">CSS News</label>
+            </div>
+            <div class="select-newsletter">
+              <input type="checkbox" id="js-news" name="type" value="news-3" />
+              <label for="js-news">Javascript News</label>
+            </div>
           </div>
 
-          <div>
-            <input type="radio" id="html-format" name="format" value="format-1" checked />
-            <label for="html-format">HTML</label>
-
-            <input type="radio" id="text-format" name="format" value="format-2" />
-            <label for="text-format">Plain text</label>
+          <div class="newsletter-container">
+            <p>Newsletter format</p>
+            <div class="select-format">
+              <input type="radio" id="html-format" name="format" value="format-1" checked />
+              <label for="html-format">HTML</label>
+            </div>
+            <div class="select-format">
+              <input type="radio" id="text-format" name="format" value="format-2" />
+              <label for="text-format">Plain text</label>
+            </div>
           </div>
 
-          <div>
+          <div class="newsletter-container">
             <label for="text-area">Other topics you'd like to hear about</label>
             <textarea id="text-area" name="user_text-area"></textarea>
           </div>
