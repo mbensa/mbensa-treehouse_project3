@@ -13,7 +13,7 @@
     <header>
       <h1>THE CODE REVIEW</h1>
       <div class="main-text">
-        <h2>Signup for our newsletter</h2>
+        <h2>Sign up for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
       </div>
     </header>
@@ -38,8 +38,8 @@
           <input type="text" id="city" name="user_city" />
 
           <label for="state">State</label>
-          <select id="state" name="user_state">
-            <option value="none" selected disabled hidden>Choose State</option>
+          <select id="state" name="user_state" required>
+            <option value="" selected disabled hidden>Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -104,14 +104,17 @@
             <div class="select-newsletter">
               <input type="checkbox" id="html-news" name="type" value="news-1" checked />
               <label for="html-news">HTML News</label>
+              <span class="checkmark"></span>
             </div>
             <div class="select-newsletter">
               <input type="checkbox" id="css-news" name="type" value="news-2" />
               <label for="css-news">CSS News</label>
+              <span class="checkmark"></span>
             </div>
             <div class="select-newsletter">
               <input type="checkbox" id="js-news" name="type" value="news-3" />
               <label for="js-news">Javascript News</label>
+              <span class="checkmark"></span>
             </div>
           </div>
 

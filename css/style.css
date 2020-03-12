@@ -12,6 +12,10 @@ html {
 
 /*===========================================*/
 
+body {
+  background-color: #f4f9fd;
+}
+
 header {
   text-align: center;
 }
@@ -73,11 +77,11 @@ label {
   padding: 20px 0;
 }
 
-.contact select,
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-textarea {
+textarea,
+select {
   background-color: #eff0f1;
   font-size: 1.2rem;
   border-radius: 3px;
@@ -93,7 +97,17 @@ input::placeholder {
   color: #adb2b7;
 }
 
-.contact select {
+select {
+  color: black;
+  background: url("../img/arrow.png") no-repeat right, #eff0f1;
+  background-size: 15px;
+}
+
+option {
+  color: black;
+}
+
+select:invalid {
   color: #adb2b7;
 }
 
@@ -142,3 +156,15 @@ footer p {
   color: #9da3a8;
   margin-bottom: 50px;
 }
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #46698b;
+  background-color: #e0eaf4;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/*=========================================
+stlye checkboxes
+==========================================*/
