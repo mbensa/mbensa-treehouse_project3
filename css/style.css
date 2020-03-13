@@ -166,5 +166,30 @@ select:focus {
 }
 
 /*=========================================
-stlye checkboxes
+media queries
 ==========================================*/
+@media (min-width: 768px) {
+main,
+.main-text {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contact,
+.newsletter {
+  margin: 0;
+}
+
+button {
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group label {
+  flex-basis: 35%;
+}
