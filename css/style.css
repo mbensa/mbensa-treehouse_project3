@@ -55,6 +55,7 @@ label {
 
 .contact {
   display: flex;
+  flex-direction: column;
   margin: 0 20px;
   text-align: left;
   border-bottom: 2.5px solid #2d3945;
